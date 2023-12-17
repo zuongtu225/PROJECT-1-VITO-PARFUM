@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrY8M5S1rLgdCZ1OlRNDUBSGEFooi4H8rWpt2sHGFyaaUXqNwb6iCmB4YtYu2lJyIN8cs&usqp=CAU  "
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vito Perfum</title>
+  </head>
+  <body>
+    <header id="moveTop">
+      <!-- nav site top -->
+      <nav class="nav-site container">
+        <ul>
+          <li><a href="#">Chào mừng đến với Vito Corleone</a></li>
+          <li><a href="#">Yêu thích</a></li>
+          <li><a href="#">Hàng hiệu giảm 50%</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Liên hệ chúng tôi</a></li>
+          <li>
+            <a href="#">
+              <div class="hotline">
+                <i class="fa-solid fa-phone iconSocial"></i>
+                <p>02.999.999.999</p>
+              </div></a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="bx bxl-facebook iconSocial"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram iconSocial"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube iconSocial"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- desktop menu-->
+      <div class="header-main container">
+        <div class="logo">
+          <img src="./img/logo-brand/logoVip.jpg" alt="" />
+        </div>
+        <div class="menu-item">
+          <div class="input-item-search">
+            <div class="form-search-small"></div>
+            <i
+              class="fa-solid fa-bars icon-menu hide-desktop display-mobile hide-tablet"
+            ></i>
+            <input
+              type="text"
+              id="searchTop"
+              placeholder="Tìm kiếm"
+              class="hide-mobile"
+            />
+            <k class="hide-tablet hide-mobile">|</k>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
+          <div class="account hide-mobile">
+            <p id="loginAccount">
+              <span class="hide-mobile hide-tablet">Đăng nhập</span>
+              <i class="fa-regular fa-user"></i>
+            </p>
+            <a href="./Page/profileUser.html"></a>
+            <div id="profile">
+              <p id="nameUser"></p>
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <i class="logout fa-solid fa-arrow-right-from-bracket"></i>
+            <a href="./Page/product-manage.html"
+              ><i class="home-admin fa-solid fa-house-chimney-user"></i
+            ></a>
+          </div>
+          <div class="cart">
+            <p class="hide-mobile hide-tablet">|</p>
+            <div class="nationwide-store hide-mobile hide-tablet">
+              <i class="fa-solid fa-store"></i>
+            </div>
+            <i id="cartRender" class="fa-solid fa-cart-shopping"></i>
+            <p id="length-cart">0</p>
+          </div>
+          <i class="fa-solid fa-bars icon-menu hide-desktop"></i>
+        </div>
+      </div>
+      <div class="mega-menu container">
+        <ul>
+          <li>
+            <a href="./Page/manPerfume.html" class="menu-hover-man"
+              >Nước Hoa Nam</a
+            >
+          </li>
+
+          <li>
+            <a href="./Page/womanPerfume.html" class="menu-hover-woman"
+              >Nước Hoa Nữ</a
+            >
+          </li>
+          <li>
+            <p>Nước Hoa Niche</p>
+          </li>
+          <li>
+            <p class="menu-hover-gift">Giftset</p>
+          </li>
+          <li>
+            <p>Thương Hiệu</p>
+          </li>
+          <li>
+            <p>Bodycare & Homecare</p>
+          </li>
+          <li><a href="#">Tư vấn</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- ______Slider BIG_________start-->
+      <div class="slider">
+        <div class="list">
+          <div class="item">
+            <img src="./img/slider/slide1.webp" alt="" />
+          </div>
+          <div class="item">
+            <img src="./img/slider/slide2.png" alt="" />
+          </div>
+
+          <div class="item">
+            <img src="./img/slider/slide3.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="./img/slider/slide4.webp" alt="" />
+          </div>
+          <div class="item">
+            <img src="./img/slider/slide5.webp" alt="" />
+          </div>
+        </div>
+        <!-- button pre and next -->
+        <div class="buttons">
+          <button id="prev"><i class="bx bxs-chevron-left"></i></button>
+          <button id="next"><i class="bx bxs-chevron-right"></i></button>
+        </div>
+        <!-- dots -->
+        <ul class="dots">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <!-- ______Slider BIG_________end-->
+      <br />
+      <!-- _______________Brand Form____________start-->
+      <div class="section-header container">
+        <a href="#">Thương hiệu</a>
+        <a href="#">Xem thêm ></a>
+      </div>
+      <div class="brands-section container">
+        <!-- ______Slider small_________start-->
+        <div class="slider-small">
+          <div class="list-small">
+            <div class="item-small">
+              <img src="./img/slider/smallslide1.jpg" alt="" />
+            </div>
+            <div class="item-small">
+              <img src="./img/slider/smallslide2.webp" alt="" />
+            </div>
+            <div class="item-small">
+              <img src="./img/slider/smallslide3.jpg" alt="" />
+            </div>
+            <div class="item-small">
+              <img src="./img/slider/smallslide4.jfif" alt="" />
+            </div>
+            <div class="item-small">
+              <img src="./img/slider/smallslide5.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- ______Slider small_________end-->
+        <div class="brands-logo">
+          <a href="#" class="item-logo"
+            ><img src="./img/logo-brand/logo-brand1.webp" alt=""
+          /></a>
+          <a href="#" class="item-logo"
+            ><img src="./img/logo-brand/logo-brand2.webp" alt=""
+          /></a>
+          <a href="#" class="item-logo"
+            ><img src="./img/logo-brand/logo-brand3.webp" alt=""
+          /></a>
+          <a href="#" class="item-logo"
+            ><img src="./img/logo-brand/logo-brand4.webp" alt=""
+          /></a>
+          <a href="#" class="item-logo"
+            ><img src="./img/logo-brand/logo-brand5.webp" alt=""
+          /></a>
+          <a href="#" class="item-logo"
+            ><img src="./img/logo-brand/logo-brand6.webp" alt=""
+          /></a>
+          <a href="#" class="item-logo"
+            ><img src="./img/logo-brand/logo-brand7.webp" alt=""
+          /></a>
+          <a href="#" class="item-logo"
+            ><img src="./img/logo-brand/logo-brand8.webp" alt=""
+          /></a>
+          <a href="#" class="item-logo"
+            ><img src="./img/logo-brand/logo-brand9.webp" alt=""
+          /></a>
+          <a href="#" class="item-logo"
+            ><img src="./img/logo-brand/logo-brand10.webp" alt=""
+          /></a>
+          <a href="#" class="item-logo"
+            ><img src="./img/logo-brand/logo-brand11.webp" alt=""
+          /></a>
+          <a href="#" class="item-logo"
+            ><img src="./img/logo-brand/logo-brand12.webp" alt=""
+          /></a>
+          <a href="#" class="item-logo"
+            ><img src="./img/logo-brand/logo-brand13.webp" alt=""
+          /></a>
+          <a href="#" class="item-logo"
+            ><img src="./img/logo-brand/logo-brand14.webp" alt=""
+          /></a>
+          <a href="#" class="item-logo"
+            ><img src="./img/logo-brand/logo-brand15.webp" alt=""
+          /></a>
+          <a href="#" class="item-logo"
+            ><img src="./img/logo-brand/logo-brand16.webp" alt=""
+          /></a>
+        </div>
+      </div>
+      <!-- _______________Brand Form____________end-->
+
+      <!-- _______________Deal Thơm____________start-->
+      <div class="section-header container">
+        <a href="#">Deal Thơm</a>
+        <a href="#">Xem thêm ></a>
+      </div>
+      <div class="deal-fragrant hide-mobile container"></div>
+      <!-- _______________Deal Thơm____________end-->
+
+      <!--_________ MINI TRAVEL _________end-->
+      <div class="section-header container">
+        <a href="#">MINI & TRAVEL</a>
+        <a href="#">Xem thêm ></a>
+      </div>
+      <div class="travel-mini container"></div>
+
+      <!-- __________HOME-BLOCK___start -->
+      <div class="home-banner-block container">
+        <div class="block-man home-block">
+          <img src="./img/Nam/home-block.jpg" alt="" />
+
+          <a href="./Page/manPerfume.html"
+            >NƯỚC HOA NAM
+            <i
+              class="fa-sharp fa-solid fa-right-long fa-beat"
+              style="color: #ffffff"
+            ></i
+          ></a>
+        </div>
+        <div class="block-woman home-block">
+          <img src="./img/Nữ/home-block.jpg" alt="" />
+          <a href="./Page/womanPerfume.html"
+            >NƯỚC HOA NỮ
+            <i
+              class="fa-sharp fa-solid fa-right-long fa-beat"
+              style="color: #ffffff"
+            ></i
+          ></a>
+        </div>
+        <div class="block-niche home-block">
+          <img src="./img/Niche/home-page.jpg" alt="" />
+          <a href="#"
+            >NƯỚC HOA NICHE
+            <i
+              class="fa-sharp fa-solid fa-right-long fa-beat"
+              style="color: #ffffff"
+            ></i
+          ></a>
+        </div>
+      </div>
+      <!-- __________HOME-BLOCK ___end-->
+      <!--_________ Best Seller_________start-->
+      <div class="section-header container">
+        <a href="#">Best Seller</a>
+        <a href="#">Xem thêm ></a>
+      </div>
+      <div class="best-seller container"></div>
+      <!--_________ Hàng mới về_________start -->
+      <div class="section-header container hide-tablet">
+        <a href="#">Hàng Mới Về</a>
+        <a href="#">Xem thêm ></a>
+      </div>
+      <div class="newArrivals container"></div>
+      <!--_________ Hàng mới về_________end-->
+      <!-- ______BLOGS__________ -->
+      <div class="blog-container hide-mobile hide-tablet">
+        <div class="heading-blog container">
+          <p>BLOG</p>
+          <p></p>
+        </div>
+        <div class="blog-content container">
+          <div class="item-blog">
+            <div class="blog-img">
+              <img src="./img/blog/blog2.jpg" alt="" />
+            </div>
+            <p>COLE SPROUSE CÙNG THƯƠNG HIỆU CHANEL</p>
+          </div>
+          <div class="item-blog">
+            <div class="blog-img">
+              <img src="./img/blog/blog6.webp" alt="" />
+            </div>
+            <p>MÙI HƯƠNG MỚI CỦA NƯỚC HOA HIỆN ĐẠI</p>
+          </div>
+          <div class="item-blog">
+            <div class="blog-img">
+              <img src="./img/blog/blog1.jpg" alt="" />
+            </div>
+            <p>CHUẨN VỊ ĐÀN ÔNG CÙNG COMBO NƯỚC HOA PHÁI MEN</p>
+          </div>
+          <div class="item-blog">
+            <div class="blog-img">
+              <img src="./img/blog/blog4.jpg" alt="" />
+            </div>
+            <p>DÀN SAO HÀN QUỐC PR CHO HÃNG GUCCI</p>
+          </div>
+          <div class="item-blog">
+            <div class="blog-img">
+              <img src="./img/blog/blog5.jpg" alt="" />
+            </div>
+            <p>
+              BỘ SƯU TẬP NƯỚC HOA PHÁP ĐẲNG CẤP CỦA MỘT NGƯỜI NỔI TIẾNG TRUNG
+              QUỐC
+            </p>
+          </div>
+          <div class="item-blog">
+            <div class="blog-img">
+              <img src="./img/blog/blog3.jpg" alt="" />
+            </div>
+            <p>ẤM ÁP MÙI HƯƠNG NƯỚC HOA NARCISO CÙNG VỚI TÌNH NHÂN</p>
+          </div>
+        </div>
+      </div>
+      <div class="titi"></div>
+      <!-- About Vito -->
+      <div class="about-vito hide-mobile hide-tablet">
+        <div class="container">
+          <h3>Về VITO PARFUM</h3>
+          <div class="about-info">
+            <a href="#">
+              <div class="item-about">
+                <i class="bx bx-store"></i>
+                <p>10 cửa hàng toàn quốc</p>
+              </div></a
+            >
+            <a href="#">
+              <div class="item-about">
+                <i class="bx bx-note"></i>
+                <p>Tư vấn online</p>
+              </div></a
+            >
+            <a href="#">
+              <div class="item-about">
+                <i class="fa-solid fa-truck-fast"></i>
+                <p>Freeship toàn quốc</p>
+              </div></a
+            >
+            <a href="#">
+              <div class="item-about">
+                <i class="bx bx-gift"></i>
+                <p>Quà tặng</p>
+              </div></a
+            >
+            <a href="#">
+              <div class="item-about">
+                <i class="fa-solid fa-tent-arrow-turn-left"></i>
+                <p>Đổi trả miễn phí</p>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+      <!--____ info___outsite -->
+      <div class="for-you hide-mobile hide-tablet">
+        <div class="forYou-container">
+          <a href="#">
+            <p>Hãy là người đầu tiên được biết</p>
+            <p>
+              Nhiều hoạt động hợp tác cùng các thương hiệu danh tiếng và chương
+              trình khuyến mại hấp dẫn chỉ dành riêng cho khách hàng của Vito
+              Parfum
+            </p></a
+          >
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-footer">
+        <div class="social-menu">
+          <div class="logo-foot">
+            <img src="./img/logo-brand/blackLogo.jpg" alt="" />
+          </div>
+          <div class="icon-foot">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div class="info-footer-container">
+          <ul>
+            <li><a href="#">BRAND VITO PARFUM</a></li>
+            <li>
+              <a href="#">Vito Parfum VN hệ thống nước hoa Việt Nam </a>
+            </li>
+
+            <li><a href="#">Vito London hệ thống nước hoa Luân Đôn</a></li>
+            <li><a href="#">Vito EY Italy hệ thống nước hoa Ý</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">THÔNG TIN HỖ TRỢ</a></li>
+            <li><a href="#">Hotline: 0909888999 </a></li>
+            <li><a href="#">Email: zuongtu225@gmail.com </a></li>
+            <li><a href="#">Wechat: zuongtu225</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Địa Chỉ</a></li>
+            <li>
+              <a href="#">CN1: 1 Điện Biên Phủ Hồ Chí Minh</a>
+            </li>
+            <li>
+              <a href="#">CN2: 363 Nguyễn Văn Linh Đà Nẵng </a>
+            </li>
+          </ul>
+          <ul>
+            <li><a href="#">Đăng Ký Nhận Thông Tin</a></li>
+            <div class="email-footer">
+              <input type="text" placeholder="Email" />
+              <button>Gửi</button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <a href="#moveTop" class="moveTop"
+      ><i class="fa-solid fa-square-caret-up"></i
+    ></a>
+    <script src="./index.js"></script>
+    <script src="./database.js"></script>
+  </body>
+</html>

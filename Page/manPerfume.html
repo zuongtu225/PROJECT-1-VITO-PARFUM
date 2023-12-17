@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/manPerfume.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <!-- nav site top -->
+      <nav class="nav-site container">
+        <ul>
+          <li><a href="#">Chào mừng đến với Vito Corleone</a></li>
+          <li><a href="#">Yêu thích</a></li>
+          <li><a href="#">Hàng hiệu giảm 50%</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Liên hệ chúng tôi</a></li>
+          <li>
+            <a href="#">
+              <div class="hotline">
+                <i class="fa-solid fa-phone iconSocial"></i>
+                <p>02.999.999.999</p>
+              </div></a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="bx bxl-facebook iconSocial"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram iconSocial"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube iconSocial"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- desktop menu-->
+      <div class="header-main container">
+        <div class="logo">
+          <img src="../img/logo-brand/logoVip.jpg" alt="" />
+        </div>
+        <div class="menu-item">
+          <div class="input-item-search">
+            <i
+              class="fa-solid fa-bars icon-menu hide-desktop display-mobile hide-tablet"
+            ></i>
+            <input
+              type="text"
+              oninput="search()"
+              id="searchProducts"
+              placeholder="Tìm kiếm"
+              class="hide-mobile"
+            />
+            <k class="hide-tablet hide-mobile">|</k>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <a href="./login.html"></a>
+          <div class="account hide-mobile">
+            <p id="loginAccount">
+              <span class="hide-mobile hide-tablet">Đăng nhập</span>
+              <i class="fa-regular fa-user"></i>
+            </p>
+            <div id="profile">
+              <p id="nameUser"></p>
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <a href="./cart.html"></a>
+            <i class="logout fa-solid fa-arrow-right-from-bracket"></i>
+          </div>
+          <div class="cart">
+            <p class="hide-mobile hide-tablet">|</p>
+            <div class="nationwide-store hide-mobile hide-tablet">
+              <i class="fa-solid fa-store"></i>
+            </div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p id="length-cart">1</p>
+          </div>
+          <i class="fa-solid fa-bars icon-menu hide-desktop"></i>
+        </div>
+      </div>
+      <div class="mega-menu container">
+        <ul>
+          <li>
+            <p>Nước Hoa Nam</p>
+          </li>
+
+          <li>
+            <a class="menu-hover-woman">Nước Hoa Nữ</a>
+          </li>
+          <li>
+            <p>Nước Hoa Mini</p>
+          </li>
+          <li>
+            <p>Giftset</p>
+          </li>
+          <li>
+            <p class="menu-hover-brand">Thương Hiệu</p>
+          </li>
+          <li>
+            <p>Bodycare & Homecare</p>
+          </li>
+          <li><a href="#">Tư vấn</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="site-breakcrumb container">
+        <a href="../index.html">Trang chủ <i class="fa-solid fa-house"></i></a>
+      </div>
+      <div class="main-content container">
+        <div class="brands">
+          <div class="left-wrapper">
+            <h4>Thương hiệu</h4>
+            <div class="all-brands">
+              <ul class="render-allBrands"></ul>
+            </div>
+          </div>
+          <div class="left-wrapper">
+            <h4>Phân loại</h4>
+            <div class="all-brands">
+              <ul>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Roja</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Narciso</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Versace</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Chanel</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Dior</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="left-wrapper">
+            <h4>Dung tích</h4>
+            <div class="all-brands">
+              <ul>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Roja</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Narciso</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Versace</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Chanel</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Dior</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+                <li>
+                  <a href="#"><input type="text" name="" id="" />Gucci</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="all-products">
+          <div class="result-info">
+            <div class="info-left">
+              <p>Nước hoa Nam</p>
+              <p>/</p>
+              <p class="brand-name">Thương hiệu</p>
+            </div>
+            <div class="info-right">
+              <p>Sắp xếp theo:</p>
+              <select>
+                <option>Bán chạy nhất</option>
+                <option>Sản phẩm mới</option>
+                <option>Giá thấp đến cao</option>
+                <option>Giá cao đến thấp</option>
+              </select>
+            </div>
+          </div>
+          <div class="product-content-main"></div>
+          <!--  -->
+        </div>
+      </div>
+      <div class="pagination"></div>
+    </main>
+
+    <footer>
+      <div class="container-footer">
+        <div class="social-menu">
+          <div class="logo-foot">
+            <img src="../img/logo-brand/blackLogo.jpg" alt="" />
+          </div>
+          <div class="icon-foot">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div class="info-footer-container">
+          <ul>
+            <li><a href="#">BRAND VITO PARFUM</a></li>
+            <li>
+              <a href="#">Vito Parfum VN hệ thống nước hoa Việt Nam </a>
+            </li>
+
+            <li><a href="#">Vito London hệ thống nước hoa Luân Đôn</a></li>
+            <li><a href="#">Vito EY Italy hệ thống nước hoa Ý</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">THÔNG TIN HỖ TRỢ</a></li>
+            <li><a href="#">Hotline: 0909888999 </a></li>
+            <li><a href="#">Email: zuongtu225@gmail.com </a></li>
+            <li><a href="#">Wechat: zuongtu225</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Địa Chỉ</a></li>
+            <li>
+              <a href="#">CN1: 1 Điện Biên Phủ Hồ Chí Minh</a>
+            </li>
+            <li>
+              <a href="#">CN2: 363 Nguyễn Văn Linh Đà Nẵng </a>
+            </li>
+          </ul>
+          <ul>
+            <li><a href="#">Đăng Ký Nhận Thông Tin</a></li>
+            <div class="email-footer">
+              <input type="text" placeholder="Email" />
+              <button>Gửi</button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="../JS/renderProducts.js"></script>
+  </body>
+</html>

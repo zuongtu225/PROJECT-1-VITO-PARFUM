@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../CSS/product-manage.css" />
+    <title>Perfume</title>
+  </head>
+  <body>
+    <div class="admin">
+      <!-- left -->
+      <div class="admin-left">
+        <div class="menu-admin">
+          <img src="../img/logo-brand/logoVip.jpg" alt="" />
+          <a href="./admin.html"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <!-- bot menu -->
+        <ul>
+          <li>
+            <a href="#"><i class="bx bxs-package"></i>Sản phẩm </a>
+          </li>
+          <li>
+            <a href="../Page/order-manage.html"
+              ><i class="fa-solid fa-cart-shopping"></i>Đơn hàng</a
+            >
+          </li>
+          <li>
+            <a href="../Page/user-manage.html"
+              ><i class="fa-solid fa-users"></i>Người dùng</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="bx bxs-package"></i>Số liệu</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-chalkboard"></i>Cổ phiếu</a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fa-solid fa-signal"></i>Thống kê</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-book-open"></i>Chính sách</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-globe"></i>Toàn cầu</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-chalkboard"></i>Review</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-openid"></i>Chữ ký</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-gear"></i> Setting</a>
+          </li>
+        </ul>
+      </div>
+      <!-- right -->
+      <div class="admin-right">
+        <div class="top-admin-right container">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              oninput="search()"
+              id="valueSearch"
+              placeholder="Tìm kiếm"
+            />
+          </div>
+          <div class="info-admin">
+            <i class="bx bxs-moon"></i>
+
+            <i class="bx bxs-bell"></i>
+            <div class="flex-avatar">
+              <img src="../img/user/user1.jpeg" alt="" />
+              <a href="../index.html"
+                ><i class="logout fa-solid fa-arrow-right-from-bracket"></i
+              ></a>
+            </div>
+
+            <!--<i class="bx bx-sun"></i>  night -->
+          </div>
+        </div>
+
+        <!-- content -->
+        <div class="heading-title">
+          <h1>Quản lý sản phẩm</h1>
+          <button class="showForm">Thêm sản phẩm</button>
+        </div>
+        <!--  form  add-->
+        <form class="formAdd">
+          <h1>Thêm sản phẩm mới</h1>
+          <div class="form-left">
+            <input type="text" placeholder="Tên sản phẩm" id="name" />
+            <input type="number" placeholder="Giá" id="price" />
+            <input type="number" placeholder="Số lượng " id="quantity" />
+            <div class="get-img">
+              <label>Ảnh: </label>
+              <input type="file" placeholder="asd" multiple id="img" />
+              <label>Ảnh chi tiết: </label>
+              <input type="file" multiple id="imgDetail" />
+            </div>
+          </div>
+          <div class="form-right">
+            <select id="choose-brand-add">
+              <option>Thương hiệu</option>
+              <option value="Narciso">Narciso</option>
+              <option value="Versace">Versace</option>
+              <option value="Hugo Boss">Hugo Boss</option>
+              <option value="Roja">Roja</option>
+              <option value="Gucci">Gucci</option>
+              <option value="Chanel">Chanel</option>
+              <option value="Dior">Dior</option>
+              <option value="Dolce">Dolce</option>
+              <option value="Jean Paul Gaultier">Jean Paul Gaultier</option>
+            </select>
+            <!-- giới tính begin-->
+            <div class="gender">
+              <div class="genderFlex">
+                <label>Giới tính: </label>
+                <label for="gender-click">Nam</label>
+                <input
+                  id="gender-click"
+                  class="gender-input"
+                  name="gender"
+                  type="radio"
+                  value="Nam"
+                  checked
+                />
+                <label for="gender-click">Nữ</label>
+                <input
+                  id="gender-click"
+                  class="gender-input"
+                  name="gender"
+                  type="radio"
+                  value="Nữ"
+                />
+              </div>
+
+              <!-- giới tính stop-->
+            </div>
+
+            <textarea
+              placeholder="Chi tiết sản phẩm..."
+              id="description"
+            ></textarea>
+            <button id="btnAdd">Thêm</button>
+          </div>
+        </form>
+        <!--  form  add-->
+        <!--  form  update-->
+        <form class="formUpdate">
+          <h1>Sửa sản phẩm</h1>
+          <div class="form-left">
+            <input
+              type="number"
+              placeholder="Id sản phẩm"
+              id="idProduct"
+              disabled
+            />
+            <input type="text" placeholder="Tên sản phẩm" id="nameUpdate" />
+            <input type="number" placeholder="Giá" id="priceUpdate" />
+            <input type="number" placeholder="Số lượng " id="quantityUpdate" />
+            <div class="img-show-update">
+              <img alt="" id="imgShowUpdate" />
+            </div>
+
+            <div class="get-img">
+              <label>Ảnh: </label>
+              <input type="file" id="imgUpdate" />
+              <label>Ảnh chi tiết: </label>
+              <input type="file" id="imgDetailUpdate" />
+            </div>
+          </div>
+          <div class="form-right">
+            <select id="choose-brand-edit">
+              <option>Thương hiệu</option>
+              <option value="Narciso">Narciso</option>
+              <option value="Versace">Versace</option>
+              <option value="Hugo Boss">Hugo Boss</option>
+              <option value="Roja">Roja</option>
+              <option value="Gucci">Gucci</option>
+              <option value="Chanel">Chanel</option>
+              <option value="Dior">Dior</option>
+              <option value="Dolce">Dolce</option>
+              <option value="Jean Paul Gaultier">Jean Paul Gaultier</option>
+            </select>
+            <!-- giới tính begin-->
+            <div class="gender">
+              <div class="genderFlex">
+                <label>Giới tính: </label>
+                <label for="gender-click">Nam</label>
+                <input
+                  id="gender-click"
+                  class="gender-input"
+                  name="gender"
+                  type="radio"
+                  value="Nam"
+                  checked
+                />
+                <label for="gender-click">Nữ</label>
+                <input
+                  id="gender-click"
+                  class="gender-input"
+                  name="gender"
+                  type="radio"
+                  value="Nữ"
+                />
+              </div>
+
+              <!-- giới tính stop-->
+            </div>
+
+            <textarea
+              placeholder="Chi tiết sản phẩm..."
+              id="descriptionUpdate"
+            ></textarea>
+            <button id="btnUpdate">Cập nhật</button>
+          </div>
+        </form>
+        <!--  form  update end-->
+
+        <table>
+          <thead>
+            <tr>
+              <th><input type="checkbox" /></th>
+              <th>Ảnh</th>
+              <th>Tên sản phẩm</th>
+              <th>Loại</th>
+              <th>
+                <select id="choose-brand-edit">
+                  <option>Thương hiệu</option>
+                  <option value="Narciso">Narciso</option>
+                  <option value="Versace">Versace</option>
+                  <option value="Hugo Boss">Hugo Boss</option>
+                  <option value="Roja">Roja</option>
+                  <option value="Gucci">Gucci</option>
+                  <option value="Chanel">Chanel</option>
+                  <option value="Dior">Dior</option>
+                  <option value="Dolce">Dolce</option>
+                  <option value="Jean Paul Gaultier">Jean Paul Gaultier</option>
+                </select>
+              </th>
+              <th>Tồn kho</th>
+              <th>Trạng thái</th>
+              <th>Giá</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="../JS/product-manager.js"></script>
+  </body>
+</html>

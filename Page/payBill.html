@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/payBill.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="notify">
+      <img src="../img/icon/success.png" alt="">
+      <h3>Đăng ký mua hàng thành công! </h3>
+      <p>Cảm ơn khác hàng đã đăng ký mua hàng tới Vito Parfum</p>
+      <p>Bộ phận phụ trách sẽ liên hệ cho anh chị trong thời gian sớm nhất có thể. Trong trường hợp cần gấp vui lòng gọi Hotline: <span>0909.999.999</span> </p>
+      <p>Chân thành cảm ơn</p>
+      <button id="returnHome" >VỀ TRANG CHỦ</button>
+
+    </div>
+    <div class="payBill container">
+      <div class="billLeft">
+        <div class="content-top">
+         <a href="../index.html"> <img src="../img/logo-brand/logoVip.jpg" alt="" /></a>
+          <a href="./cart.html">Giỏ hàng </a>
+          <p>Thông tin giao hàng</p>
+        </div>
+        <div class="formOder" id="hidePay">
+          <input type="text" placeholder="Họ và tên" id="name" />
+          <input type="text" placeholder="Email" disabled id="email" />
+          <input type="number" placeholder="Số điện thoại" id="phone" />
+          <input type="text" placeholder="Địa chỉ" id="address" />
+          <button onclick="payBillDone()">ĐẶT HÀNG</button>
+        </div>
+       
+      </div>
+      <div class="billRight">
+        <div class="pay">
+          <div class="total container-right">
+            <div class="list-products "></div>
+            <div class="field-discount">
+              <input id="discount" placeholder="Mã giảm giá"></input>
+              <button id="btnUseCoupon">Sử dụng</button>
+            </div>
+
+            <div class="transport">
+              <p>Phí vận chuyển:</p>
+              <p>Free</p>
+            </div>
+            <div class="total-price">
+              <p>Tổng cộng</p>
+              <div class="sum">
+                 <p>VND</p>
+              <p id="printPrice" class="price"></p></div>
+             
+            </div>
+          </div>
+        
+      </div>
+    </div>
+   </div>
+    <footer>
+      <div class="container-footer">
+        <div class="social-menu">
+          <div class="logo-foot">
+            <img src="../img/logo-brand/blackLogo.jpg" alt="" />
+          </div>
+          <div class="icon-foot">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+
+        <div class="info-footer-container">
+          <ul>
+            <li><a href="#">BRAND VITO PARFUM</a></li>
+            <li>
+              <a href="#">Vito Parfum VN hệ thống nước hoa Việt Nam </a>
+            </li>
+
+            <li><a href="#">Vito London hệ thống nước hoa Luân Đôn</a></li>
+            <li><a href="#">Vito EY Italy hệ thống nước hoa Ý</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">THÔNG TIN HỖ TRỢ</a></li>
+            <li><a href="#">Hotline: 0909888999 </a></li>
+            <li><a href="#">Email: zuongtu225@gmail.com </a></li>
+            <li><a href="#">Wechat: zuongtu225</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Địa Chỉ</a></li>
+            <li>
+              <a href="#">CN1: 1 Điện Biên Phủ Hồ Chí Minh</a>
+            </li>
+            <li>
+              <a href="#">CN2: 363 Nguyễn Văn Linh Đà Nẵng </a>
+            </li>
+          </ul>
+          <ul>
+            <li><a href="#">Đăng Ký Nhận Thông Tin</a></li>
+            <div class="email-footer">
+              <input type="text" placeholder="Email" />
+              <button>Gửi</button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="../JS/payBill.js"></script>
+  </body>
+</html>

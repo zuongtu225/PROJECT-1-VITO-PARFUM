@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/profielUser.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="top"></div>
+      <div class="bottom"></div>
+    </div>
+    <form>
+      <img src="../img/user/profile55.png" alt="" />
+      <label>Họ và tên</label>
+      <input type="text" id="name" />
+      <p id="nameMSG" class="error"></p>
+
+      <label>Điện thoại</label>
+      <input type="number" id="phone" />
+      <p id="phoneMSG" class="error"></p>
+
+      <label>Email</label>
+      <input type="email" id="infoEmail" disabled />
+      <p id="emailMSG" class="error"></p>
+
+      <label>Mật khẩu mới</label>
+      <input type="password" id="password" />
+      <p id="passwordMSG" class="error"></p>
+
+      <label> Nhập lại mật khẩu</label>
+      <input type="password" id="confirmPassWord" />
+      <p id="confirmPassWordMSG" class="error"></p>
+
+      <button id="btn-form">LƯU LẠI</button>
+      <p id="saveSucced">Lưu thành công <i class="fa-solid fa-check"></i></p>
+      <a href="../index.html" id="homePage"
+        >Về trang chủ <i class="fa-solid fa-house"></i
+      ></a>
+    </form>
+    <script src="../JS/profileUser.js"></script>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+body {
+  background-color: #d5d5d5;
+}
+.admin {
+  display: flex;
+  gap: 1px;
+}
+
+/* left */
+.admin-left {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  background-color: #fff;
+  /* overflow-y: auto; */
+  width: 230px;
+}
+.menu-admin {
+  position: relative;
+  border-bottom: 2px solid rgb(239, 239, 239);
+}
+.menu-admin img {
+  width: 90%;
+}
+.menu-admin i {
+  top: 20px;
+  cursor: pointer;
+  color: rgb(4, 4, 4);
+  position: absolute;
+  font-size: 25px;
+}
+
+/* ul  menu left*/
+.admin-left ul li {
+  cursor: pointer;
+  padding: 22px 10px 10px 15px;
+}
+.admin-left ul li:last-child {
+  border-top: 2px solid rgb(230, 230, 230);
+}
+.admin-left ul li:nth-child(2) a {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+.admin-left ul li:nth-child(2) i {
+  font-size: 25px;
+
+  color: rgb(2, 2, 2);
+}
+.admin-left ul a {
+  color: rgb(135, 135, 135);
+  text-decoration: none;
+}
+.admin-left ul li i {
+  color: rgb(135, 135, 135);
+  margin-right: 15px;
+  font-size: 20px;
+}
+/* right */
+.admin-right {
+  padding-left: 230px;
+  width: 100%;
+  padding-top: 60px;
+}
+.top-admin-right {
+  background-color: #fff;
+  padding: 5px 170px 5px 40px;
+  border-left: 1px solid #e7e7e7;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  top: 0;
+  height: 60px;
+  position: fixed;
+  justify-content: space-between;
+}
+.search {
+  width: 70%;
+  position: relative;
+}
+
+.search i {
+  color: rgb(176, 176, 176);
+  position: absolute;
+  left: 1px;
+  bottom: 16px;
+  z-index: 999;
+}
+.search input {
+  font-size: 17px;
+  padding-left: 30px;
+  border: none;
+  width: 100%;
+  height: 50px;
+  outline: none;
+}
+
+.info-admin {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+.info-admin i {
+  color: #a9a9a9;
+  cursor: pointer;
+  font-size: 20px;
+}
+.info-admin img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.flex-avatar {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+.flex-avatar i {
+  color: red;
+}
+/* _______content______ */
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+.title-oder {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+/* thống kê */
+.statistical {
+  padding: 10px 0;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.order {
+  border-radius: 5px;
+  align-items: center;
+  padding: 10px 12px 20px 12px;
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+}
+.pending {
+  background-color: #9b93da;
+}
+.cancel {
+  background-color: #f53939;
+}
+.process {
+  background-color: #049ac3;
+}
+.income {
+  background-color: #01d440;
+}
+.opacity-icon {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+}
+.icon-order {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.icon-order i {
+  font-size: 20px;
+  z-index: 999;
+  color: white;
+  left: 10px;
+  bottom: 10px;
+  position: absolute;
+}
+.order .content {
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+.order .content p {
+  margin-top: 10px;
+}
+table {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 90%;
+  border-collapse: collapse;
+}
+tr {
+  border: 1px solid rgb(198, 198, 198);
+}
+th,
+td {
+  padding: 15px;
+  text-align: center;
+}
+
+td button {
+  font-size: 15px;
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  font-weight: bold;
+  color: rgb(126, 126, 126);
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+td button:hover {
+  color: black;
+}
+.item-order td:nth-child(6) button {
+  color: white;
+  background-color: #0ce24c;
+}
+.heading-title {
+  align-items: center;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.heading-title button {
+  padding: 5px 10px;
+  background-color: rgb(18, 181, 0);
+  border: none;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.admin-account p {
+  background-color: #000000;
+  color: red;
+}
+.item-order img {
+  width: 100px;
+}

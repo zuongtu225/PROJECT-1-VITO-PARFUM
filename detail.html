@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./CSS/detail.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- nav site top -->
+      <nav class="nav-site container">
+        <ul>
+          <li><a href="#">Chào mừng đến với Vito Corleone</a></li>
+          <li><a href="#">Yêu thích</a></li>
+          <li><a href="#">Hàng hiệu giảm 50%</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Liên hệ chúng tôi</a></li>
+          <li>
+            <a href="#">
+              <div class="hotline">
+                <i class="fa-solid fa-phone iconSocial"></i>
+                <p>02.999.999.999</p>
+              </div></a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="bx bxl-facebook iconSocial"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram iconSocial"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube iconSocial"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-main container">
+        <div class="logo">
+          <a href="/index.html"><img src="./img/logo-brand/logoVip.jpg" alt="" /></a>  
+        </div>
+        <div class="menu-item">
+          <div class="input-item-search hide-mobile">
+            <input type="text" placeholder="Tìm kiếm" class="inputSearch" />
+            <k class="hide-tablet">|</k>
+            <i
+              oninput="handleSearch()"
+              class="fa-solid fa-magnifying-glass"
+            ></i>
+          </div>
+
+          <div class="nationwide-store hide-tablet hide-mobile">
+            <i class="fa-solid fa-store" style="color: #000000"></i>
+          </div>
+
+          <div class="account hide-mobile">
+            <p id="loginAccount">
+              <span class="hide-mobile hide-tablet">Đăng nhập</span>
+              <i class="fa-regular fa-user"></i>
+            </p>
+            <div id="profile">
+              <p id="nameUser" class="hide-tablet"></p>
+              <i class="fa-regular fa-user"></i>
+            </div>
+
+            <i class="logout fa-solid fa-arrow-right-from-bracket"></i>
+          </div>
+          <div class="cart">
+            <i class="fa-regular fa-heart hide-tablet hide-mobile"></i>
+            <i
+              id="addCart"
+              class="fa-solid fa-cart-shopping hide-mobile"
+              style="color: #000000"
+            ></i>
+            <p id="length-cart" class="hide-tablet"></p>
+            <i class="fa-solid fa-bars icon-menu hide-desktop"></i>
+          </div>
+        </div>
+      </div>
+      <div class="mega-menu container">
+        <ul>
+          <li>
+            <a href="./Page/manPerfume.html">Nước Hoa Nam</a>
+          </li>
+
+          <li>
+            <a>Nước Hoa Nữ</a>
+          </li>
+          <li>
+            <p class="menu-hover-mini">Nước Hoa Mini</p>
+          </li>
+          <li>
+            <p class="menu-hover-gift">Giftset</p>
+          </li>
+          <li>
+            <p class="menu-hover-brand">Thương Hiệu</p>
+          </li>
+          <li>
+            <p>Bodycare & Homecare</p>
+          </li>
+          <li><a href="#">Tư vấn</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- header -->
+    <main>
+      <!-- nav-site-tab -->
+      <div class="home-site-tab container">
+        <a href="./index.html">Trang chủ |</a>
+        <a href="#">Nước Hoa Nam |</a>
+        <a href="#"><b>Narciso Rodriguez For Her Forever </b></a>
+      </div>
+      <!-- card-detail render local-->
+      <div class="card-wrapper container"></div>
+      <!-- content-detail -->
+      <div class="detail-content-wrapper container">
+        <div class="detail-site">
+          <a id="aDetail" onclick="showNavDetail('detail')"
+            >Chi tiết sản phẩm</a
+          >
+          <a id="aComment" onclick="showNavDetail('comment')">Bình luận</a>
+        </div>
+
+        <div class="page-product-content">
+          <!-- chi tiết và bình luận -->
+          <div class="page-product-content-left">
+            <!-- bình luận -->
+          </div>
+          <!-- sản phẩm bán chạy  -->
+          <div class="page-product-content-right">
+            <h3>Top sản phẩm bán chạy</h3>
+            <div class="item">
+              <img src="./img/Nam/narciso/sp1.webp" alt="" />
+              <p>Rucios london</p>
+              <p>1000 $</p>
+            </div>
+            <div class="item">
+              <img src="./img/Nam/narciso/sp2.jpg" alt="" />
+              <p>Gucci</p>
+              <p>1000 $</p>
+            </div>
+            <div class="item">
+              <img src="./img/Nam/gucci/sp2.jpg" alt="" />
+              <p>Gucci</p>
+              <p>1000 $</p>
+            </div>
+            <div class="item">
+              <img src="./img/Nam/gucci/sp7.webp" alt="" />
+              <p>Gucci</p>
+              <p>1000 $</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- social link
+    <div class="social-links">
+      <a href="#"><img src="../img/icon/insta.png" alt="" /></a>
+      <a href="#"><img src="../img/icon/wechat.png" alt="" /></a>
+      <a href="#"><img src="../img/icon/twiter.png" alt="" /></a>
+      <a href="#"><img src="../img/icon/mes.png" alt="" /></a>
+      
+    </div> -->
+    <footer>
+      <div class="container-footer">
+        <div class="social-menu">
+          <div class="logo-foot">
+            <img src="./img/logo-brand/blackLogo.jpg" alt="" />
+          </div>
+          <div class="icon-foot">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div class="info-footer-container">
+          <ul>
+            <li><a href="#">BRAND VITO PARFUM</a></li>
+            <li>
+              <a href="#">Vito Parfum VN hệ thống nước hoa Việt Nam </a>
+            </li>
+
+            <li><a href="#">Vito London hệ thống nước hoa Luân Đôn</a></li>
+            <li><a href="#">Vito EY Italy hệ thống nước hoa Ý</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">THÔNG TIN HỖ TRỢ</a></li>
+            <li><a href="#">Hotline: 0909888999 </a></li>
+            <li><a href="#">Email: zuongtu225@gmail.com </a></li>
+            <li><a href="#">Wechat: zuongtu225</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Địa Chỉ</a></li>
+            <li>
+              <a href="#">CN1: 1 Điện Biên Phủ Hồ Chí Minh</a>
+            </li>
+            <li>
+              <a href="#">CN2: 363 Nguyễn Văn Linh Đà Nẵng </a>
+            </li>
+          </ul>
+          <ul>
+            <li><a href="#">Đăng Ký Nhận Thông Tin</a></li>
+            <div class="email-footer">
+              <input type="text" placeholder="Email" />
+              <button>Gửi</button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="detail.js"></script>
+  </body>
+</html>

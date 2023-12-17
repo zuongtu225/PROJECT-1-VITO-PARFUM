@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../CSS/sign-up.css" />
+    <title>Perfume</title>
+  </head>
+  <body>
+    <header>
+      <!-- desktop menu-->
+      <div class="header-main-desk container">
+        <div class="logo">
+          <img src="../img/logo-brand/logoVip.jpg" alt="" />
+        </div>
+        <div class="menu-item">
+          <div class="input-item-search">
+            <input type="text" placeholder="Tìm kiếm" />
+            <k>|</k>
+            <i
+              oninput="handleSearch()"
+              class="fa-solid fa-magnifying-glass"
+            ></i>
+          </div>
+
+          <div class="nationwide-store">
+            <i class="fa-solid fa-store" style="color: #000000"></i>
+            <p>Cửa hàng</p>
+            <p>|</p>
+          </div>
+          <!-- 
+          <p>Nmagazine</p> -->
+
+          <div class="account">
+            <p>Tài khoản</p>
+          </div>
+          <div class="cart">
+            <p>|</p>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping" style="color: #000000"></i>
+            <p id="length-cart">1</p>
+          </div>
+        </div>
+      </div>
+      <div class="mega-menu container">
+        <ul>
+          <li><a href="../index.html">Trang chủ</a></li>
+          <li>
+            <a href="../Page/manPerfume.html" class="menu-hover-man"
+              >Nước Hoa Nam</a
+            >
+          </li>
+
+          <li>
+            <p class="menu-hover-woman">Nước Hoa Nữ</p>
+          </li>
+          <li>
+            <p class="menu-hover-mini">Nước Hoa Mini</p>
+          </li>
+          <li>
+            <p class="menu-hover-gift">Giftset</p>
+          </li>
+          <li>
+            <p class="menu-hover-brand">Thương Hiệu</p>
+          </li>
+
+          <li><a href="#">Tư vấn</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="signup-wrapper">
+        <form>
+          <h1>Thông tin đăng ký tài khoản</h1>
+          <label>Họ và tên</label>
+          <input type="text" id="name" />
+          <p id="nameMSG" class="error"></p>
+
+          <label>Điện thoại</label>
+          <input type="number" id="phone" />
+          <p id="phoneMSG" class="error"></p>
+
+          <label>Email</label>
+          <input type="email" id="infoEmail" />
+          <p id="emailMSG" class="error"></p>
+
+          <label>Mật khẩu</label>
+          <input type="password" id="password" />
+          <p id="passwordMSG" class="error"></p>
+
+          <label> Nhập lại mật khẩu</label>
+          <input type="password" id="confirmPassWord" />
+          <p id="confirmPassWordMSG" class="error"></p>
+
+          <button id="btn-form">ĐĂNG KÝ</button>
+          <div class="question">
+            <p>Bạn đã có tài khoản?</p>
+            <a href="../Page/login.html">Đăng nhập</a>
+          </div>
+        </form>
+        <div class="other-way">
+          <p>______ hoặc đăng nhập bằng _____</p>
+          <div class="fb-gg-wrapper">
+            <button>
+              <img src="../img/account/fb.webp" alt="" />
+              <p>Facebook</p>
+            </button>
+            <button>
+              <img src="../img/account/gg.png" alt="" />
+              <p>Facebook</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../JS/sign-up.js"></script>
+  </body>
+</html>

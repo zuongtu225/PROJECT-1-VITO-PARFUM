@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../CSS/cart.css" />
+    <title>Perfume</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-site container">
+        <ul>
+          <li><a href="#">Chào mừng đến với Vito Corleone</a></li>
+          <li><a href="#">Yêu thích</a></li>
+          <li><a href="#">Hàng hiệu giảm 50%</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Liên hệ chúng tôi</a></li>
+          <li>
+            <a href="#">
+              <div class="hotline">
+                <i class="fa-solid fa-phone iconSocial"></i>
+                <p>02.999.999.999</p>
+              </div></a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="bx bxl-facebook iconSocial"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram iconSocial"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube iconSocial"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-main-desk container">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../img/logo-brand/logoVip.jpg" alt=""
+          /></a>
+        </div>
+        <div class="menu-item">
+          <div class="input-item-search">
+            <input type="text" placeholder="Tìm kiếm" class="hide-mobile" />
+            <k class="hide-mobile">|</k>
+            <i
+              class="hide-mobile"
+              oninput="handleSearch()"
+              class="fa-solid fa-magnifying-glass"
+            ></i>
+          </div>
+          <div class="nationwide-store">
+            <i class="fa-solid fa-store" style="color: #000000"></i>
+          </div>
+          <div class="account hide-mobile">
+            <p id="loginAccount">
+              <span class="hide-tablet">Đăng nhập </span>
+              <i class="fa-regular fa-user"></i>
+            </p>
+            <div id="profile">
+              <p id="nameUser"></p>
+              <i class="fa-regular fa-user"></i>
+            </div>
+
+            <i class="logout fa-solid fa-arrow-right-from-bracket"></i>
+            <a href=".//Page/admin.html"
+              ><i class="home-admin fa-solid fa-house-chimney-user"></i
+            ></a>
+          </div>
+          <div class="cart">
+            <p class="hide-mobile">|</p>
+            <i class="fa-regular fa-heart hide-mobile"></i>
+            <i class="fa-solid fa-bars icon-menu hide-desktop"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- đơn hàng cần thanh toán -->
+    <main>
+      <div class="homeIndex container">
+        <a href="../index.html">Trang chủ <i class="bx bx-home"></i></a>
+        <p id="historyClick">Lịch sử đơn hàng</p>
+      </div>
+      <!-- history order -->
+      <table id="showTable">
+        <thead>
+          <tr>
+            <th><input type="checkbox" /></th>
+            <th>Mã đơn hàng</th>
+            <th>Phương thức thanh toán</th>
+            <th>Ngày đặt hàng</th>
+            <th>Ngày giao</th>
+            <th>Trạng thái</th>
+            <th>Tổng tiền</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="cart-order container">
+        <div class="cart-heading">
+          <h2>Giỏ hàng</h2>
+        </div>
+        <div class="cart-item-flex">
+          <p class="cart-item-count">0 sản phẩm</p>
+          <a href="../index.html">Tiếp tục mua hàng</a>
+        </div>
+
+        <!-- orders -->
+        <div class="cart-pay-wrapper">
+          <!-- orders -->
+          <div class="cart-oder-left"></div>
+          <div class="cart-oder-right"></div>
+
+          <!--  thanh toán -->
+        </div>
+      </div>
+    </main>
+    <!-- ______BLOGS__________ -->
+
+    <footer>
+      <div class="container-footer">
+        <div class="social-menu">
+          <div class="logo-foot">
+            <img src="../img/logo-brand/blackLogo.jpg" alt="" />
+          </div>
+          <div class="icon-foot">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div class="info-footer-container">
+          <ul>
+            <li><a href="#">BRAND VITO PARFUM</a></li>
+            <li>
+              <a href="#">Vito Parfum VN hệ thống nước hoa Việt Nam </a>
+            </li>
+
+            <li><a href="#">Vito London hệ thống nước hoa Luân Đôn</a></li>
+            <li><a href="#">Vito EY Italy hệ thống nước hoa Ý</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">THÔNG TIN HỖ TRỢ</a></li>
+            <li><a href="#">Hotline: 0909888999 </a></li>
+            <li><a href="#">Email: zuongtu225@gmail.com </a></li>
+            <li><a href="#">Wechat: zuongtu225</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Địa Chỉ</a></li>
+            <li>
+              <a href="#">CN1: 1 Điện Biên Phủ Hồ Chí Minh</a>
+            </li>
+            <li>
+              <a href="#">CN2: 363 Nguyễn Văn Linh Đà Nẵng </a>
+            </li>
+          </ul>
+          <ul>
+            <li><a href="#">Đăng Ký Nhận Thông Tin</a></li>
+            <div class="email-footer">
+              <input type="text" placeholder="Email" />
+              <button>Gửi</button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="../JS/cart.js"></script>
+  </body>
+</html>

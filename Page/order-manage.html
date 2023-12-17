@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../CSS/order-manage.css" />
+    <title>Perfume</title>
+  </head>
+  <body>
+    <div class="admin">
+      <!-- left -->
+      <div class="admin-left">
+        <div class="menu-admin">
+          <img src="../img/logo-brand/logoVip.jpg" alt="" />
+          <a href="./admin.html"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <!-- bot menu -->
+        <ul>
+          <li>
+            <a href="../Page/product-manage.html"
+              ><i class="bx bxs-package"></i>Sản phẩm
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i>Đơn hàng</a>
+          </li>
+          <li>
+            <a href="../Page/user-manage.html"
+              ><i class="fa-solid fa-users"></i>Người dùng</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="bx bxs-package"></i>Số liệu</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-chalkboard"></i>Cổ phiếu</a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fa-solid fa-signal"></i>Thống kê</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-book-open"></i>Chính sách</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-globe"></i>Toàn cầu</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-chalkboard"></i>Review</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-openid"></i>Chữ ký</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-gear"></i> Setting</a>
+          </li>
+        </ul>
+      </div>
+      <!-- right -->
+      <div class="admin-right">
+        <header>
+          <div class="top-admin-right container">
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" class="search" placeholder="Tìm kiếm" />
+            </div>
+            <div class="info-admin">
+              <i class="bx bxs-moon"></i>
+
+              <i class="bx bxs-bell"></i>
+              <div class="flex-avatar">
+                <img src="../img/user/user1.jpeg" alt="" />
+                <a href="../index.html"
+                  ><i class="logout fa-solid fa-arrow-right-from-bracket"></i
+                ></a>
+              </div>
+
+              <!--<i class="bx bx-sun"></i>  night -->
+            </div>
+          </div>
+        </header>
+        <main>
+          <!-- __thống kê___ -->
+
+          <!-- content -->
+          <div class="heading-title container">
+            <h1>Quản lý đơn hàng</h1>
+            <button class="view-all">View All</button>
+          </div>
+          <div class="statistical container">
+            <div class="order pending">
+              <div class="content">
+                <p>ĐANG CHỜ XỬ LÝ</p>
+                <p id="order-processing"></p>
+              </div>
+              <div class="icon-order">
+                <div class="opacity-icon"></div>
+                <i class="fa-brands fa-algolia"></i>
+              </div>
+            </div>
+
+            <div class="order cancel">
+              <div class="content">
+                <p>ĐƠN HÀNG BỊ HỦY</p>
+                <p></p>
+              </div>
+              <div class="icon-order">
+                <div class="opacity-icon"></div>
+                <i class="fa-solid fa-x"></i>
+              </div>
+            </div>
+            <div class="order process">
+              <div class="content">
+                <p>QUÁ TRÌNH ĐẶT HÀNG</p>
+                <p></p>
+              </div>
+              <div class="icon-order">
+                <div class="opacity-icon"></div>
+                <i class="fa-solid fa-arrows-spin"></i>
+              </div>
+            </div>
+            <div class="order income">
+              <div class="content">
+                <p>THU NHẬP THÁNG NAY</p>
+                <p id="revenue"></p>
+              </div>
+              <div class="icon-order">
+                <div class="opacity-icon"></div>
+                <i class="bx bx-money"></i>
+              </div>
+            </div>
+          </div>
+          <table class="container">
+            <thead>
+              <tr>
+                <th><input type="checkbox" /></th>
+                <th>Mã đơn hàng</th>
+                <th>Phương thức thanh toán</th>
+                <th>Ngày đặt hàng</th>
+                <th>Ngày giao</th>
+                <th>Trạng thái</th>
+                <th>Tổng tiền</th>
+                <th>Hành động</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </main>
+      </div>
+    </div>
+    <script src="../JS/oder-manage.js"></script>
+  </body>
+</html>

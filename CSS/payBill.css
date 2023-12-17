@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  font-size: 16px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+@media screen and (min-width: 1024px) {
+  .payBill {
+    padding-bottom: 100px;
+    padding-left: 13%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .billLeft {
+    padding: 20px;
+    width: 50%;
+  }
+  .billLeft p {
+    padding-top: 10px;
+  }
+  .billLeft input {
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgb(236, 231, 231);
+    border-radius: 5px;
+    height: 40px;
+    width: 572px;
+  }
+  #email {
+    width: 315px;
+  }
+  #phone {
+    width: 180px;
+  }
+  #address {
+    margin-bottom: 30px;
+  }
+  .billLeft button {
+    margin-left: 27%;
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #3da9e2;
+    color: white;
+    border-radius: 4px;
+    transition: 1s;
+    border: none;
+  }
+  .billLeft button:hover {
+    background-color: #000000;
+  }
+  .billLeft img {
+    width: 350px;
+    margin-bottom: 10px;
+  }
+  .content-top a {
+    color: rgb(0, 179, 250);
+    text-decoration: none;
+    display: block;
+  }
+
+  .billRight {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 100px;
+    background-color: #f3f3f3;
+    border-left: 1px solid #cdc9c9;
+    width: 50%;
+  }
+  .container-right {
+    width: 72%;
+  }
+  .list-products {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(232, 232, 232);
+  }
+  .transport {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .notify {
+    display: none;
+  }
+  .notify {
+    display: none;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 115px;
+    text-align: center;
+    transition: 2s;
+    gap: 10px;
+    align-items: center;
+  }
+  .notify img {
+    padding-bottom: 10px;
+    width: 50px;
+  }
+  .notify p {
+    padding: 10px;
+  }
+  .notify span {
+    color: red;
+  }
+  .notify p:last-child {
+    margin-bottom: 20px;
+  }
+  #returnHome {
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    background-color: #00d15e;
+  }
+  .length {
+    top: 2px;
+    left: 45px;
+    color: white;
+    position: absolute;
+    border-radius: 50%;
+    font-size: 14px;
+    height: 20px;
+    padding: 2px 0 2px 6px;
+    width: 20px;
+    background-color: #aca9a9;
+  }
+  .field-discount {
+    padding-top: 30px;
+    display: flex;
+    gap: 16px;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    padding-bottom: 30px;
+  }
+  .field-discount input {
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid rgb(221, 221, 221);
+    padding: 10px;
+    width: 73%;
+    height: 40px;
+    transition: 0.5s;
+  }
+  .field-discount input:hover {
+    border: 2px solid rgb(0, 204, 255);
+  }
+  .field-discount button {
+    padding: 9px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    font-size: 17px;
+    background-color: #b0b0b0;
+    color: white;
+    transition: 2s;
+  }
+  .field-discount button:hover {
+    background-color: #000000;
+  }
+  .content-title {
+    display: block;
+  }
+  .name-product {
+    overflow: hidden;
+    width: 250px;
+  }
+  .total-price {
+    border-top: 1px solid #ebe6e6;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .total-price p {
+    font-size: 20px;
+  }
+  .sum {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+  }
+  .sum p:first-child {
+    color: #c5c2c2;
+    font-size: 12px;
+  }
+  .item {
+    width: 100%;
+    align-items: center;
+    padding: 12px 0;
+    position: relative;
+    display: flex;
+    gap: 20px;
+  }
+  .item img {
+    width: 55px;
+    height: 55px;
+  }
+  .formOder {
+    width: 700px;
+  }
+  .formOder input {
+    width: 500px;
+    margin-top: 20px;
+  }
+  .formOder button {
+    margin-top: 10px;
+  }
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  .lefttttt img {
+    width: 150px;
+  }
+  /* ______footer_______ */
+  footer {
+    color: white;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 50px;
+  }
+  .container-footer {
+    margin: 0 auto;
+    width: 85% !important;
+  }
+  .social-menu {
+    align-items: center;
+    padding: 20px 50px 10px 0;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
+  .logo-foot img {
+    width: 50%;
+  }
+  .icon-foot {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  /* info __footer*/
+  .info-footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer ul li {
+    list-style: none;
+    padding: 4px;
+    font-size: 12px;
+  }
+  footer ul li:first-child {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .email-footer {
+    padding: 10px 0;
+    display: flex;
+  }
+  .email-footer input {
+    height: 39px;
+    padding-left: 10px;
+    outline: none;
+  }
+  .email-footer button {
+    font-weight: bold;
+    color: white;
+    background-color: #f902ec;
+    border: none;
+    cursor: pointer;
+    padding: 2px 10px;
+  }
+
+  .moveTop i {
+    font-size: 20px;
+    color: black;
+    position: fixed;
+    transition: 0.6s;
+    right: 25px;
+    bottom: 7%;
+  }
+  .moveTop i:hover {
+    color: rgb(7, 211, 242);
+  }
+}
